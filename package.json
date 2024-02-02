@@ -1,0 +1,29 @@
+{
+  "name": "rpg-material-card-wiki",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eberron94/rpg-material-card-wiki.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eberron94/rpg-material-card-wiki/issues"
+  },
+  "homepage": "https://github.com/eberron94/rpg-material-card-wiki#readme",
+  "dependencies": {
+    "fs-extra": "^11.2.0",
+    "handlebars": "^4.7.8",
+    "lodash": "^4.17.21",
+    "markdown-it": "^14.0.0",
+    "markdown-it-anchor": "^8.6.7",
+    "markdown-yaml-metadata-parser": "^3.0.0",
+    "rpg-material-card-api": "^1.0.1",
+    "unescape": "^1.0.1"
+  }
+}

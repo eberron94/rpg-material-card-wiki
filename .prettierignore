@@ -1,0 +1,11 @@
+data-final/*
+data-stage/spell.json
+data/temp.json
+
+
+scripts/util/toolUtil.js
+
+data-raw/data/*
+data/converted/*
+
+build/*
