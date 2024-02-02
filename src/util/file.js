@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const markdownMetaParser = require('markdown-yaml-metadata-parser');
+const Handlebars = require('handlebars');
 const { flatten } = require('../flatten');
 
 const getFilePaths = (dir) => {
@@ -67,4 +68,10 @@ exports.ensureDirectoryExistence = (filePath) => {
     }
     ensureDirectoryExistence(dirname);
     fs.mkdirSync(dirname);
+};
+
+exports.compileHandlebarTemplate = (templatePath) => {
+    return Handlebars.compile(
+        fs.readFileSync(path.resolve(templatePath), 'utf-8')
+    );
 };
